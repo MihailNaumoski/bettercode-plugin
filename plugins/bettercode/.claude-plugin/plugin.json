@@ -1,0 +1,45 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "bettercode",
+  "displayName": "BetterCode",
+  "description": "MCP skill server with 52 skills and 10 agents. Security (OWASP), testing, frontend, backend, DevOps, database, architecture, and AI/ML.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BetterCode",
+    "email": "hello@bettercode.studio"
+  },
+  "homepage": "https://bettercode.studio",
+  "repository": "https://github.com/MihailNaumoski/bettercode-plugin",
+  "license": "MIT",
+  "category": "development",
+  "keywords": [
+    "mcp",
+    "skills",
+    "agents",
+    "security",
+    "owasp",
+    "testing",
+    "devops",
+    "frontend",
+    "backend",
+    "architecture"
+  ],
+  "mcpServers": {
+    "bettercode": {
+      "type": "sse",
+      "url": "https://mcp.bettercode.studio/mcp"
+    }
+  },
+  "commands": [
+    "./commands/"
+  ],
+  "agents": [
+    "./agents/"
+  ],
+  "hooks": [
+    "./hooks/"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

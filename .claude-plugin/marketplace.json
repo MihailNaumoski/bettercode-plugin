@@ -1,0 +1,43 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "plugin",
+  "description": "MCP-powered skill library for Claude Code. Security audits, code review, testing, and full-stack development.",
+  "owner": {
+    "name": "BetterCode",
+    "email": "hello@bettercode.studio",
+    "url": "https://bettercode.studio"
+  },
+  "plugins": [
+    {
+      "name": "bettercode",
+      "description": "MCP skill server with 60+ curated skills and 20+ agents. Security (OWASP), testing (unit/E2E), frontend (React/Vue), backend (APIs/DB), DevOps (CI/CD/K8s), and architecture patterns.",
+      "version": "1.0.0",
+      "author": {
+        "name": "BetterCode",
+        "email": "hello@bettercode.studio"
+      },
+      "source": "./plugins/bettercode",
+      "category": "development",
+      "homepage": "https://bettercode.studio",
+      "repository": "https://github.com/bettercode-studio/bettercode-marketplace",
+      "license": "MIT",
+      "keywords": [
+        "mcp",
+        "skills",
+        "agents",
+        "security",
+        "owasp",
+        "testing",
+        "devops",
+        "frontend",
+        "backend",
+        "architecture"
+      ],
+      "tags": [
+        "mcp",
+        "productivity",
+        "full-stack"
+      ]
+    }
+  ]
+}

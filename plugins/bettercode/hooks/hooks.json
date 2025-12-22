@@ -1,0 +1,9 @@
+{
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "type": "prompt",
+      "prompt": "# Welcome to BetterCode!\n\nYou now have access to 60+ expert coding skills via the BetterCode MCP server.\n\n## Quick Start\n- `/skills` - Browse available skills\n- `/review` - Code review\n- `/security-review` - Security audit\n- `/test <file>` - Generate tests\n\n## Just Ask\nOr just describe what you need - the right skill will be applied automatically."
+    }
+  ]
+}

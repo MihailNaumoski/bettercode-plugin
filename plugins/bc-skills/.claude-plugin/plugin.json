@@ -1,0 +1,39 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "bc-skills",
+  "displayName": "BetterCode Skills",
+  "description": "60+ expert coding skills and 20 specialized agents. Security review, code generation, testing, DevOps, architecture patterns - all via MCP. No prompting required.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BetterCode",
+    "email": "support@bettercode.studio"
+  },
+  "homepage": "https://bettercode.studio",
+  "repository": "https://github.com/bettercode-studio/bettercode-marketplace",
+  "license": "MIT",
+  "category": "development",
+  "keywords": [
+    "skills",
+    "agents",
+    "mcp",
+    "security",
+    "testing",
+    "devops",
+    "frontend",
+    "backend",
+    "architecture",
+    "code-review"
+  ],
+  "mcpServers": {
+    "bettercode": {
+      "type": "sse",
+      "url": "https://mcp.bettercode.studio/mcp"
+    }
+  },
+  "commands": [
+    "./commands/"
+  ],
+  "agents": [
+    "./agents/"
+  ]
+}
