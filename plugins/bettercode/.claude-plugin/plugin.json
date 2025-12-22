@@ -1,7 +1,5 @@
 {
-  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "bettercode",
-  "displayName": "BetterCode",
   "description": "MCP skill server with 52 skills and 10 agents. Security (OWASP), testing, frontend, backend, DevOps, database, architecture, and AI/ML.",
   "version": "1.0.0",
   "author": {
@@ -11,35 +9,39 @@
   "homepage": "https://bettercode.studio",
   "repository": "https://github.com/MihailNaumoski/bettercode-plugin",
   "license": "MIT",
-  "category": "development",
   "keywords": [
     "mcp",
     "skills",
     "agents",
     "security",
-    "owasp",
     "testing",
-    "devops",
-    "frontend",
-    "backend",
-    "architecture"
+    "devops"
   ],
   "mcpServers": {
     "bettercode": {
       "type": "sse",
-      "url": "https://mcp.bettercode.studio/mcp"
+      "url": "http://localhost:3000/mcp"
     }
   },
   "commands": [
-    "./commands/"
+    "./commands/skills.md",
+    "./commands/review.md",
+    "./commands/security-review.md",
+    "./commands/test.md"
   ],
   "agents": [
-    "./agents/"
+    "./agents/security-auditor.md",
+    "./agents/code-reviewer.md",
+    "./agents/testing-engineer.md",
+    "./agents/frontend-specialist.md",
+    "./agents/backend-specialist.md",
+    "./agents/database-engineer.md",
+    "./agents/devops-engineer.md",
+    "./agents/architecture-analyst.md",
+    "./agents/performance-optimizer.md",
+    "./agents/fullstack-developer.md"
   ],
   "hooks": [
-    "./hooks/"
-  ],
-  "skills": [
-    "./skills/"
+    "./hooks/hooks.json"
   ]
 }

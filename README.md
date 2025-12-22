@@ -268,7 +268,7 @@ Claude: *automatically uses security-review skill*
 |---------|------------|--------------|
 | All 52 skills | ✅ | ✅ |
 | All 10 agents | ✅ | ✅ |
-| Rate limit | 30/min | 100/min |
+| Rate limit | 100/min | 100/min |
 | Support | Community | Priority |
 
 **Free access during beta.** We're gathering feedback and building the best coding skills platform. Early users help shape what we build next.
