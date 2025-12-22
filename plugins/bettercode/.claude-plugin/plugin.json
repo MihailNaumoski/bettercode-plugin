@@ -9,18 +9,11 @@
   "homepage": "https://bettercode.studio",
   "repository": "https://github.com/MihailNaumoski/bettercode-plugin",
   "license": "MIT",
-  "keywords": [
-    "mcp",
-    "skills",
-    "agents",
-    "security",
-    "testing",
-    "devops"
-  ],
+  "keywords": ["mcp", "skills", "agents", "security", "devops"],
   "mcpServers": {
     "bettercode": {
       "type": "sse",
-      "url": "http://localhost:3000/mcp"
+      "url": "https://mcp.bettercode.studio/mcp"
     }
   },
   "commands": [
