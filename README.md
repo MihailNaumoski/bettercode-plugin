@@ -1,118 +1,118 @@
-<div align="center">
+# BetterCode Skills
 
-# 🚀 BetterCode Skills
-
-### **Stop prompting. Start building.**
-
-*52 expert coding skills that make Claude Code actually understand what you need.*
+**Claude Code + 52 expert skills. No prompting required.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-blueviolet)](https://claude.ai/code)
-[![Skills](https://img.shields.io/badge/Skills-52-orange)](#skills-catalog)
-[![Agents](https://img.shields.io/badge/Agents-10-blue)](#specialized-agents)
-[![MCP](https://img.shields.io/badge/Protocol-MCP-red)](https://modelcontextprotocol.io)
-[![Beta](https://img.shields.io/badge/Status-Beta-yellow)](#free-during-beta)
-
-<br />
-
-[**Quick Start**](#-quick-start) · [**Features**](#-what-you-get) · [**Skills**](#-skills-catalog) · [**Docs**](https://docs.bettercode.studio)
-
-<br />
+[![MCP](https://img.shields.io/badge/Protocol-MCP-blue)](https://modelcontextprotocol.io)
+[![Skills](https://img.shields.io/badge/Skills-52-orange)](#skills)
+[![Status](https://img.shields.io/badge/Status-Beta_(Free)-brightgreen)](#free-during-beta)
 
 ---
 
-**🎉 Join 1,000+ developers who stopped writing prompts**
-
----
-
-</div>
-
-## 😤 The Problem
-
-Every. Single. Session.
+## The Problem
 
 ```
 You: "Review this code"
-Claude: *gives generic advice*
+Claude: *generic advice*
 
-You: "No, check for security issues specifically"
-Claude: *still misses OWASP patterns*
+You: "Check for security issues"
+Claude: *misses OWASP patterns*
 
-You: "Use industry best practices"
-Claude: *asks what best practices you mean*
+You: "Use best practices"
+Claude: *asks which ones*
 
-You: 😫
+You: *writes 200-word prompt explaining everything*
 ```
 
-**You spend more time prompting than coding.**
-
----
-
-## ✨ The Solution
+## The Solution
 
 ```bash
-/plugin install bettercode@plugin
+claude mcp add bettercode --transport sse https://mcp.bettercode.studio/mcp
 ```
-
-Now:
 
 ```
 You: "Review this code"
 
-Claude: *automatically uses security-review skill*
-        ✓ Checks OWASP Top 10
-        ✓ Finds SQL injection on line 47
-        ✓ Suggests parameterized queries
-        ✓ Links to CWE-89 reference
+Claude: ✓ OWASP Top 10 scan complete
+        ✓ SQL injection found (line 47)
+        ✓ Fix: Use parameterized queries
+        ✓ Reference: CWE-89
 ```
 
-**52 expert skills. Zero prompting. Just results.**
+**Skills teach Claude your standards. You just code.**
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
-**2 commands. 30 seconds. Done.**
+### Option 1: Direct MCP Connection (Recommended)
 
 ```bash
-# 1. Add the marketplace
-/plugin marketplace add MihailNaumoski/bettercode-plugin
-
-# 2. Install the plugin
-/plugin install bettercode@plugin
+claude mcp add bettercode --transport sse https://mcp.bettercode.studio/mcp
 ```
 
-**Restart Claude Code. That's it.**
+### Option 2: Plugin Install
+
+```bash
+claude plugin add https://github.com/MihailNaumoski/bettercode-plugin
+```
+
+Restart Claude Code. Done.
 
 ---
 
-## 🎯 What You Get
+## What's Included
 
-| Category | Skills | Examples |
-|----------|--------|----------|
-| 🛡️ **Security** | 8 | OWASP audits, auth patterns, vulnerability detection |
-| ⚛️ **Frontend** | 10 | Figma-to-code, React, animations, accessibility |
-| 🔧 **Backend** | 9 | API design, webhooks, performance optimization |
-| 🗄️ **Database** | 7 | Schema design, query optimization, migrations |
-| 🚀 **DevOps** | 8 | CI/CD, Docker, Kubernetes, monitoring |
-| 🧪 **Testing** | 6 | Unit, integration, E2E, mocking strategies |
-| 🏗️ **Architecture** | 6 | ADRs, design patterns, tech stack decisions |
-| 📝 **Documentation** | 4 | API docs, runbooks, README generation |
+| Category | Count | Examples |
+|----------|-------|----------|
+| 🛡️ Security | 8 | OWASP audits, auth patterns, secrets detection |
+| ⚛️ Frontend | 10 | React, Next.js, accessibility, animations |
+| 🔧 Backend | 9 | API design, caching, error handling |
+| 🗄️ Database | 7 | Schema design, query optimization |
+| 🚀 DevOps | 8 | Docker, K8s, CI/CD pipelines |
+| 🧪 Testing | 6 | Unit, E2E, mocking strategies |
+| 🏗️ Architecture | 4 | ADRs, design patterns |
 
-**Plus 10 specialized AI agents for complex workflows.**
+**+ 10 specialized agents** for complex workflows.
 
 ---
 
-## 📚 Skills Catalog
+## How It Works
+
+```
+Your Claude Code
+       │
+       │ "review this for security"
+       ▼
+┌─────────────────────────────────┐
+│     BetterCode MCP Server       │
+│     mcp.bettercode.studio       │
+│                                 │
+│  Skills loaded:                 │
+│  • security/owasp-review ←────── auto-selected
+│  • security/auth-patterns       │
+│  • security/input-validation    │
+└─────────────────────────────────┘
+       │
+       │ Expert-level analysis
+       ▼
+   Your terminal
+```
+
+The MCP server injects domain expertise into Claude's context. No prompting gymnastics.
+
+---
+
+## Skills Reference
 
 <details>
-<summary><b>🛡️ Security Skills</b></summary>
+<summary><b>🛡️ Security</b></summary>
 
-| Skill | Description |
-|-------|-------------|
+| Skill | What it does |
+|-------|--------------|
 | `owasp-review` | Full OWASP Top 10 vulnerability scan |
 | `auth-patterns` | Authentication flow analysis |
-| `api-security` | API security hardening |
+| `api-security` | API hardening recommendations |
 | `dependency-audit` | CVE detection in dependencies |
 | `secrets-detection` | Credential leak prevention |
 | `input-validation` | Injection attack prevention |
@@ -122,15 +122,15 @@ Claude: *automatically uses security-review skill*
 </details>
 
 <details>
-<summary><b>⚛️ Frontend Skills</b></summary>
+<summary><b>⚛️ Frontend</b></summary>
 
-| Skill | Description |
-|-------|-------------|
+| Skill | What it does |
+|-------|--------------|
 | `figma-to-code` | Design to component translation |
 | `responsive-design` | Mobile-first layouts |
 | `animations` | Smooth micro-interactions |
 | `component-architecture` | Scalable component patterns |
-| `state-management` | Redux, Zustand, Jotai |
+| `state-management` | Redux, Zustand, Jotai patterns |
 | `performance-frontend` | Core Web Vitals optimization |
 | `accessibility` | WCAG compliance |
 | `css-architecture` | Tailwind, CSS-in-JS |
@@ -140,191 +140,125 @@ Claude: *automatically uses security-review skill*
 </details>
 
 <details>
-<summary><b>🔧 Backend Skills</b></summary>
+<summary><b>🔧 Backend</b></summary>
 
-| Skill | Description |
-|-------|-------------|
+| Skill | What it does |
+|-------|--------------|
 | `api-design` | RESTful API architecture |
-| `graphql-schema` | GraphQL design |
+| `graphql-schema` | GraphQL design patterns |
 | `webhooks` | Event-driven integrations |
-| `background-jobs` | Queue and workers |
-| `caching-strategy` | Redis, CDN patterns |
-| `error-handling` | Graceful failures |
-| `logging` | Structured logging |
+| `background-jobs` | Queue and worker patterns |
+| `caching-strategy` | Redis, CDN optimization |
+| `error-handling` | Graceful failure patterns |
+| `logging` | Structured logging setup |
 | `rate-limiting` | API protection |
-| `performance-backend` | Optimization |
+| `performance-backend` | Server optimization |
 
 </details>
 
 <details>
-<summary><b>🚀 DevOps Skills</b></summary>
+<summary><b>🚀 DevOps</b></summary>
 
-| Skill | Description |
-|-------|-------------|
+| Skill | What it does |
+|-------|--------------|
 | `ci-cd-pipelines` | GitHub Actions, GitLab CI |
 | `docker-config` | Multi-stage builds |
-| `kubernetes` | K8s manifests, Helm |
+| `kubernetes` | K8s manifests, Helm charts |
 | `infrastructure-code` | Terraform, Pulumi |
 | `monitoring` | Prometheus, Grafana |
-| `log-aggregation` | ELK, Loki |
+| `log-aggregation` | ELK, Loki setup |
 | `secrets-management` | Vault patterns |
 | `deployment-strategies` | Blue-green, canary |
 
 </details>
 
 <details>
-<summary><b>🧪 Testing Skills</b></summary>
+<summary><b>🧪 Testing</b></summary>
 
-| Skill | Description |
-|-------|-------------|
+| Skill | What it does |
+|-------|--------------|
 | `unit-tests` | Jest, Vitest, pytest |
-| `integration-tests` | API testing |
+| `integration-tests` | API testing patterns |
 | `e2e-tests` | Playwright, Cypress |
 | `mocking` | Mock strategies |
-| `test-architecture` | Test pyramid |
+| `test-architecture` | Test pyramid design |
 | `tdd-workflow` | Red-green-refactor |
 
 </details>
 
 <details>
-<summary><b>🏗️ Architecture Skills</b></summary>
+<summary><b>🏗️ Architecture</b></summary>
 
-| Skill | Description |
-|-------|-------------|
-| `adr-writing` | Decision records |
-| `pattern-selection` | Design patterns |
+| Skill | What it does |
+|-------|--------------|
+| `adr-writing` | Architecture decision records |
+| `pattern-selection` | Design pattern recommendations |
 | `tech-stack` | Technology evaluation |
-| `microservices` | Service boundaries |
-| `event-driven` | Event sourcing, CQRS |
-| `migration-planning` | Legacy modernization |
+| `microservices` | Service boundary design |
 
 </details>
 
 ---
 
-## 🤖 Specialized Agents
+## Agents
 
-| Agent | What it does |
-|-------|-------------|
-| `security-auditor` | OWASP security analysis |
-| `code-reviewer` | Comprehensive PR reviews |
-| `testing-engineer` | Test strategy and generation |
+For complex, multi-step workflows:
+
+| Agent | Specialty |
+|-------|-----------|
+| `security-auditor` | Full security analysis |
+| `code-reviewer` | PR-style reviews |
+| `testing-engineer` | Test strategy + generation |
 | `frontend-specialist` | React/Next.js expert |
 | `backend-specialist` | API and server expert |
-| `database-engineer` | Schema optimization |
 | `devops-engineer` | CI/CD and infrastructure |
-| `architecture-analyst` | System design |
-| `performance-optimizer` | Speed and efficiency |
-| `fullstack-developer` | End-to-end development |
 
 ---
 
-## 🔌 Slash Commands
+## Free During Beta
 
-| Command | What it does |
-|---------|-------------|
-| `/skills` | Browse all available skills |
-| `/review` | Comprehensive code review |
-| `/security-review` | OWASP security audit |
-| `/test <file>` | Generate tests |
-
----
-
-## 🏗️ How It Works
-
-```
-┌──────────────────────────────────────────────────┐
-│              Your Claude Code                     │
-│                                                   │
-│  "Review this code for security issues"          │
-│                      ↓                           │
-│         ┌─────────────────────┐                  │
-│         │  BetterCode Plugin  │                  │
-│         └──────────┬──────────┘                  │
-└────────────────────┼─────────────────────────────┘
-                     │ MCP Protocol
-                     ↓
-┌──────────────────────────────────────────────────┐
-│         BetterCode Skills Server                  │
-│           mcp.bettercode.studio                   │
-│                                                   │
-│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐    │
-│  │Security│ │Frontend│ │Backend │ │DevOps  │    │
-│  └────────┘ └────────┘ └────────┘ └────────┘    │
-│                                                   │
-│  → Selects: security/owasp-review               │
-│  → Applies OWASP methodology                    │
-│  → Returns actionable findings                  │
-└──────────────────────────────────────────────────┘
-```
-
-**No API keys. No configuration. No prompting.**
-
----
-
-## 🆓 Free During Beta
-
-| Feature | Free (Now) | Pro (Coming) |
-|---------|------------|--------------|
+| | Beta (Now) | Pro (Coming) |
+|---|------------|--------------|
 | All 52 skills | ✅ | ✅ |
-| All 10 agents | ✅ | ✅ |
-| Rate limit | 100/min | 100/min |
-| Support | Community | Priority |
+| All agents | ✅ | ✅ |
+| Rate limit | 100/min | Unlimited |
+| Support | GitHub Issues | Priority |
 
-**Free access during beta.** We're gathering feedback and building the best coding skills platform. Early users help shape what we build next.
-
-*Pricing for Pro tier will be announced later. Free tier will always exist.*
+**No API key required.** Just connect and use.
 
 ---
 
-## 🔒 Security & Privacy
+## Privacy
 
-- **No data storage** - We don't store your code
-- **No conversation logs** - Your work stays private
-- **SkillShield protection** - Skills can't be extracted
-- **Rate limiting** - Abuse prevention built-in
-
----
-
-## 📖 Documentation
-
-| Guide | Link |
-|-------|------|
-| Getting Started | [docs.bettercode.studio/start](https://docs.bettercode.studio/start) |
-| Skills Reference | [docs.bettercode.studio/skills](https://docs.bettercode.studio/skills) |
-| Agents Guide | [docs.bettercode.studio/agents](https://docs.bettercode.studio/agents) |
+- **No code storage** — your code never touches our database
+- **No logs** — conversations aren't recorded
+- **Rate limiting only** — we track request counts, not content
 
 ---
 
-## 🤝 Community
+## Links
 
-- 🐛 **Report bugs**: [hello@bettercode.studio](mailto:hello@bettercode.studio)
-- 💡 **Request skills**: [hello@bettercode.studio](mailto:hello@bettercode.studio)
-- 🌐 **Website**: [bettercode.studio](https://bettercode.studio)
-- 📸 **Instagram**: [@bettercode.studio](https://instagram.com/bettercode.studio)
+- **Website**: [bettercode.studio](https://bettercode.studio)
+- **Docs**: [docs.bettercode.studio](https://docs.bettercode.studio)
+- **Issues**: [GitHub Issues](https://github.com/MihailNaumoski/bettercode-plugin/issues)
+- **Email**: hello@bettercode.studio
 
 ---
 
-## 📜 License
+## License
 
-MIT © [BetterCode](https://bettercode.studio)
+MIT — Plugin code is open source.
 
-Plugin code is open source. Skills content is proprietary and served via our MCP server.
+Skills content is proprietary and served via MCP.
 
-See [Terms of Service](TERMS_OF_SERVICE.md) for usage terms.
+See [Terms of Service](TERMS_OF_SERVICE.md).
 
 ---
 
 <div align="center">
 
-**Built for developers who'd rather ship than prompt.**
+**Stop prompting. Start shipping.**
 
-<br />
-
-[⭐ Star this repo](https://github.com/MihailNaumoski/bettercode-plugin) · [🌐 Website](https://bettercode.studio) · [📸 Instagram](https://instagram.com/bettercode.studio)
-
-<br />
-
-**Made with ❤️ by [BetterCode](https://bettercode.studio)**
+If this helps you, [star the repo](https://github.com/MihailNaumoski/bettercode-plugin) ⭐
 
 </div>
