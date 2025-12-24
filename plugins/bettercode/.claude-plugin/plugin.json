@@ -12,11 +12,8 @@
   "keywords": ["mcp", "skills", "agents", "security", "devops"],
   "mcpServers": {
     "bettercode": {
-      "type": "http",
-      "url": "https://mcp.bettercode.studio/mcp",
-      "headers": {
-        "X-API-Key": "public-free-tier"
-      }
+      "type": "sse",
+      "url": "https://mcp.bettercode.studio/mcp"
     }
   },
   "commands": [
