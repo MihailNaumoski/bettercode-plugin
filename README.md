@@ -65,6 +65,13 @@ Run these commands **inside Claude Code** (not in terminal):
 
 Restart Claude Code. Done.
 
+### Uninstall
+
+```
+/plugin uninstall bettercode@bettercode-marketplace
+/plugin marketplace remove bettercode-marketplace
+```
+
 ---
 
 ## What's Included
