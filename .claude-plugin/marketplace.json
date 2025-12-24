@@ -1,6 +1,6 @@
 {
   "name": "bettercode-marketplace",
-  "description": "MCP-powered skill library for Claude Code. Security audits, code review, testing, and full-stack development.",
+  "description": "MCP-powered skill library for Claude Code. 61 skills + 20 agents for security, code review, testing, and full-stack development.",
   "owner": {
     "name": "BetterCode",
     "email": "hello@bettercode.studio",
@@ -9,8 +9,8 @@
   "plugins": [
     {
       "name": "bettercode",
-      "description": "MCP skill server with 52 skills and 10 agents. Security (OWASP), testing, frontend, backend, DevOps, and architecture.",
-      "version": "1.0.0",
+      "description": "MCP skill server with 61 skills and 20 agents. Security (OWASP), testing, frontend, backend, DevOps, and architecture.",
+      "version": "1.0.1",
       "author": {
         "name": "BetterCode",
         "email": "hello@bettercode.studio"

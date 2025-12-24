@@ -1,10 +1,11 @@
 # BetterCode Skills
 
-**Claude Code + 52 expert skills. No prompting required.**
+**Claude Code + 61 expert skills + 20 agents. No prompting required.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![MCP](https://img.shields.io/badge/Protocol-MCP-blue)](https://modelcontextprotocol.io)
-[![Skills](https://img.shields.io/badge/Skills-52-orange)](#skills)
+[![Skills](https://img.shields.io/badge/Skills-61-orange)](#skills)
+[![Agents](https://img.shields.io/badge/Agents-20-purple)](#agents)
 [![Status](https://img.shields.io/badge/Status-Beta_(Free)-brightgreen)](#free-during-beta)
 
 ---
@@ -27,7 +28,7 @@ You: *writes 200-word prompt explaining everything*
 ## The Solution
 
 ```bash
-claude mcp add bettercode --transport sse https://mcp.bettercode.studio/mcp
+claude mcp add bettercode --transport http https://mcp.bettercode.studio/mcp
 ```
 
 ```
@@ -47,14 +48,19 @@ Claude: ✓ OWASP Top 10 scan complete
 
 ### Option 1: Direct MCP Connection (Recommended)
 
+Run in your terminal:
+
 ```bash
-claude mcp add bettercode --transport sse https://mcp.bettercode.studio/mcp
+claude mcp add bettercode --transport http https://mcp.bettercode.studio/mcp
 ```
 
 ### Option 2: Plugin Install
 
-```bash
-claude plugin add https://github.com/MihailNaumoski/bettercode-plugin
+Run these commands **inside Claude Code** (not in terminal):
+
+```
+/plugin marketplace add MihailNaumoski/bettercode-plugin
+/plugin install bettercode@bettercode-marketplace
 ```
 
 Restart Claude Code. Done.
@@ -66,14 +72,14 @@ Restart Claude Code. Done.
 | Category | Count | Examples |
 |----------|-------|----------|
 | 🛡️ Security | 8 | OWASP audits, auth patterns, secrets detection |
-| ⚛️ Frontend | 10 | React, Next.js, accessibility, animations |
-| 🔧 Backend | 9 | API design, caching, error handling |
-| 🗄️ Database | 7 | Schema design, query optimization |
-| 🚀 DevOps | 8 | Docker, K8s, CI/CD pipelines |
-| 🧪 Testing | 6 | Unit, E2E, mocking strategies |
-| 🏗️ Architecture | 4 | ADRs, design patterns |
+| ⚛️ Frontend | 12 | React, Next.js, accessibility, animations, Figma-to-code |
+| 🔧 Backend | 10 | API design, caching, webhooks, error handling |
+| 🗄️ Database | 8 | Schema design, query optimization, migrations |
+| 🚀 DevOps | 10 | Docker, K8s, CI/CD, monitoring, infrastructure |
+| 🧪 Testing | 7 | Unit, E2E, mocking, TDD strategies |
+| 🏗️ Architecture | 6 | ADRs, design patterns, microservices |
 
-**+ 10 specialized agents** for complex workflows.
+**+ 20 specialized agents** for complex workflows.
 
 ---
 
@@ -219,9 +225,9 @@ For complex, multi-step workflows:
 
 | | Beta (Now) | Pro (Coming) |
 |---|------------|--------------|
-| All 52 skills | ✅ | ✅ |
-| All agents | ✅ | ✅ |
-| Rate limit | 100/min | Unlimited |
+| All 61 skills | ✅ | ✅ |
+| All 20 agents | ✅ | ✅ |
+| Rate limit | 30/min | Unlimited |
 | Support | GitHub Issues | Priority |
 
 **No API key required.** Just connect and use.

@@ -1,7 +1,7 @@
 {
   "name": "bettercode",
-  "description": "MCP skill server with 52 skills and 10 agents. Security (OWASP), testing, frontend, backend, DevOps, database, architecture, and AI/ML.",
-  "version": "1.0.0",
+  "description": "MCP skill server with 61 skills and 20 agents. Security (OWASP), testing, frontend, backend, DevOps, database, architecture, and AI/ML.",
+  "version": "1.0.1",
   "author": {
     "name": "BetterCode",
     "email": "hello@bettercode.studio"
@@ -12,8 +12,11 @@
   "keywords": ["mcp", "skills", "agents", "security", "devops"],
   "mcpServers": {
     "bettercode": {
-      "type": "sse",
-      "url": "https://mcp.bettercode.studio/mcp"
+      "type": "http",
+      "url": "https://mcp.bettercode.studio/mcp",
+      "headers": {
+        "X-API-Key": "public-free-tier"
+      }
     }
   },
   "commands": [
