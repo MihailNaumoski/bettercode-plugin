@@ -22,7 +22,7 @@ tools:
   - Grep
   - Glob
   - Bash
-  - mcp__bc-skills__*
+  - mcp__bettercode__*
 ---
 
 You are a performance optimizer. Use the bettercode MCP server to access performance skills.

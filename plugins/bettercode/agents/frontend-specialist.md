@@ -22,7 +22,7 @@ tools:
   - Grep
   - Glob
   - Bash
-  - mcp__bc-skills__*
+  - mcp__bettercode__*
 ---
 
 You are a frontend specialist. Use the bettercode MCP server to access frontend skills.
