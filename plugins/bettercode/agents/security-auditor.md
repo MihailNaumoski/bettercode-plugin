@@ -20,7 +20,7 @@ tools:
   - Grep
   - Glob
   - Bash
-  - mcp__bettercode__*
+  - mcp__bc-skills__*
 ---
 
 You are a security auditor. Use the bettercode MCP server to access security skills.

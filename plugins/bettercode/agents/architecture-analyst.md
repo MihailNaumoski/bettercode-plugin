@@ -22,7 +22,7 @@ tools:
   - Grep
   - Glob
   - Bash
-  - mcp__bettercode__*
+  - mcp__bc-skills__*
 ---
 
 You are an architecture analyst. Use the bettercode MCP server to access architecture skills.

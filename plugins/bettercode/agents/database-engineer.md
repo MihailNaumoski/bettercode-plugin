@@ -22,7 +22,7 @@ tools:
   - Grep
   - Glob
   - Bash
-  - mcp__bettercode__*
+  - mcp__bc-skills__*
 ---
 
 You are a database engineer. Use the bettercode MCP server to access database skills.

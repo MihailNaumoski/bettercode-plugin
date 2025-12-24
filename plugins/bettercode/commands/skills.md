@@ -3,17 +3,17 @@ name: skills
 description: Browse and search BetterCode skills - 60+ expert coding skills
 user_invocable: true
 allowed-tools:
-  - mcp__bettercode__bc_menu
-  - mcp__bettercode__browse_skills
-  - mcp__bettercode__browse_agents
-  - mcp__bettercode__search
-  - mcp__bettercode__get_skill_info
-  - mcp__bettercode__get_agent_info
-  - mcp__bettercode__use_skill
-  - mcp__bettercode__use_agent
+  - mcp__bc-skills__bc_menu
+  - mcp__bc-skills__browse_skills
+  - mcp__bc-skills__browse_agents
+  - mcp__bc-skills__search
+  - mcp__bc-skills__get_skill_info
+  - mcp__bc-skills__get_agent_info
+  - mcp__bc-skills__use_skill
+  - mcp__bc-skills__use_agent
 ---
 
-Use the `mcp__bettercode__bc_menu` tool to show the main BetterCode skills menu.
+Use the `mcp__bc-skills__bc_menu` tool to show the main BetterCode skills menu.
 
 Then help the user explore available skills by category or search for specific skills using the `search` tool.
 

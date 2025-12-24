@@ -11,9 +11,12 @@
   "license": "MIT",
   "keywords": ["mcp", "skills", "agents", "security", "devops"],
   "mcpServers": {
-    "bettercode": {
-      "type": "sse",
-      "url": "https://mcp.bettercode.studio/mcp"
+    "bc-skills": {
+      "type": "http",
+      "url": "https://mcp.bettercode.studio/mcp",
+      "headers": {
+        "X-API-Key": "public-free-tier"
+      }
     }
   },
   "commands": [
