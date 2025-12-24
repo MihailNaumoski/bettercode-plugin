@@ -2,6 +2,14 @@
 name: security-review
 description: Run an OWASP-based security audit on code
 user_invocable: true
+allowed-tools:
+  - mcp__bettercode__use_skill
+  - mcp__bettercode__use_agent
+  - mcp__bettercode__get_skill_info
+  - Read
+  - Grep
+  - Glob
+  - Bash
 arguments:
   - name: files
     description: Files or directories to review (optional, defaults to current changes)
@@ -10,7 +18,7 @@ arguments:
 
 You are performing a security review using BetterCode's security skills.
 
-1. First, use the `use_skill` tool with `skill_id: "security/owasp-review"` from the bettercode MCP server
+1. First, use the `mcp__bettercode__use_skill` tool with `skill_id: "security/owasp-review"`
 2. Apply the security review methodology to the specified files or current changes
 3. Check for common vulnerabilities:
    - Injection attacks (SQL, command, XSS)

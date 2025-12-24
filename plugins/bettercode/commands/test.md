@@ -2,6 +2,16 @@
 name: test
 description: Generate comprehensive tests using BetterCode's testing skills
 user_invocable: true
+allowed-tools:
+  - mcp__bettercode__use_skill
+  - mcp__bettercode__use_agent
+  - mcp__bettercode__get_skill_info
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
 arguments:
   - name: target
     description: File, function, or component to test
@@ -13,7 +23,7 @@ arguments:
 
 You are generating tests using BetterCode's testing skills.
 
-1. Use the `use_skill` tool with `skill_id: "testing/unit-tests"` from the bettercode MCP server
+1. Use the `mcp__bettercode__use_skill` tool with `skill_id: "testing/unit-tests"`
 2. Analyze the target code: {{target}}
 3. Generate comprehensive tests
 

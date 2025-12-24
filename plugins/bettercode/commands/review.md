@@ -2,6 +2,14 @@
 name: review
 description: Comprehensive code review using BetterCode's code reviewer agent
 user_invocable: true
+allowed-tools:
+  - mcp__bettercode__use_agent
+  - mcp__bettercode__use_skill
+  - mcp__bettercode__get_agent_info
+  - Read
+  - Grep
+  - Glob
+  - Bash
 arguments:
   - name: focus
     description: Review focus (quality, performance, security, all)
@@ -10,7 +18,7 @@ arguments:
 
 You are performing a code review using BetterCode's code-reviewer agent.
 
-1. Use the `use_agent` tool with `agent_id: "code-reviewer"` from the bettercode MCP server
+1. Use the `mcp__bettercode__use_agent` tool with `agent_id: "code-reviewer"`
 2. Review the current changes (git diff) or specified files
 
 Focus areas:
