@@ -28,7 +28,7 @@ You: *writes 200-word prompt explaining everything*
 ## The Solution
 
 ```bash
-claude mcp add bettercode --transport http https://mcp.bettercode.studio/mcp
+claude mcp add bettercode --transport sse https://mcp.bettercode.studio/mcp
 ```
 
 ```
@@ -51,7 +51,7 @@ Claude: ✓ OWASP Top 10 scan complete
 Run in your terminal:
 
 ```bash
-claude mcp add bettercode --transport http https://mcp.bettercode.studio/mcp
+claude mcp add bettercode --transport sse https://mcp.bettercode.studio/mcp
 ```
 
 ### Option 2: Plugin Install
